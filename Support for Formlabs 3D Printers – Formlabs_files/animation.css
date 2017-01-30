@@ -1,0 +1,70 @@
+.scroll-travel-right {
+  -skrollr-animation-name: travel-right;
+}
+.para-background-down {
+  -skrollr-animation-name: para-background-down;
+  position: relative;
+}
+.para-background-up {
+  -skrollr-animation-name: para-background-up;
+  position: relative;
+}
+.para-text {
+  position: relative;
+  -skrollr-animation-name: para-text;
+}
+.scroll-fade-in {
+  -skrollr-animation-name: fade-in;
+  opacity: 0;
+}
+.loupe-scroll-anchor {
+  -skrollr-animation-name: loupe-travel-horizontally;
+}
+@-skrollr-keyframes travel-right {
+  bottom-bottom {
+    left: 0%;
+  }
+  top-top {
+    left: 100%;
+  }
+}
+@-skrollr-keyframes para-background-down {
+  top-bottom {
+    background-position: 50% 0%;
+  }
+  bottom-top {
+    background-position: 50% 80%;
+  }
+}
+@-skrollr-keyframes para-background-up {
+  top-bottom {
+    background-position: 50% 80%;
+  }
+  bottom-top {
+    background-position: 50% 0%;
+  }
+}
+@-skrollr-keyframes para-text {
+  top-bottom {
+    top: 0px;
+  }
+  bottom-top {
+    top: 150px;
+  }
+}
+@-skrollr-keyframes fade-in {
+  top {
+    opacity: 0;
+  }
+  center {
+    opacity: 1;
+  }
+}
+@-skrollr-keyframes loupe-travel-horizontally {
+  top-bottom {
+    left: 25%;
+  }
+  bottom-top {
+    left: 0%;
+  }
+}
